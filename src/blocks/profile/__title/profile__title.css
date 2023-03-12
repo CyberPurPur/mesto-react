@@ -1,0 +1,17 @@
+.profile__title {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin-top: 14px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .profile__title {
+        gap: 10px;
+        max-width: 217px;
+        align-self: center;
+        margin-left: 23px;
+        margin-top: 8px;
+    }
+}

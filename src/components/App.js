@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/logo.svg";
 import Header from "./Header";
 import Main from "./Main";
@@ -7,12 +7,10 @@ import PopupWithForm from "./PopupWithForm";
 import ImagePopup from "./ImagePopup";
 
 function App() {
-  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] =
-    React.useState(false);
-  const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
-  const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] =
-    React.useState(false);
-  const [selectedCard, setSelectedCard] = React.useState({});
+  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
+  const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
+  const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState({});
 
   function closeAllPopups() {
     setIsEditProfilePopupOpen(false);
@@ -123,7 +121,7 @@ function App() {
         name={`confirmation`}
         buttonText={`Да`}
       />
-      
+
       <ImagePopup card={selectedCard} onClose={closeAllPopups} />
     </div>
   );

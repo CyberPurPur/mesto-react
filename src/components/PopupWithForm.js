@@ -15,7 +15,7 @@ function PopupWithForm({title, name, isOpen, onClose, children, buttonText}) {
         <form className="form profile-data" name={`${name}`} noValidate>
           {children}
           <button className="form__submit-button" type="submit">
-            {buttonText}
+            {buttonText || `Сохранить`}
           </button>
         </form>
       </div>

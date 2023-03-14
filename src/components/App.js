@@ -33,7 +33,6 @@ function App() {
         name={`edit`}
         isOpen={isEditProfilePopupOpen}
         onClose={closeAllPopups}
-        buttonText={`Сохранить`}
       >
         <>
           <fieldset className="form__fields">
@@ -67,7 +66,6 @@ function App() {
         name={`new-card`}
         isOpen={isAddPlacePopupOpen}
         onClose={closeAllPopups}
-        buttonText={`Сохранить`}
       >
         <>
           <fieldset className="form__fields">
@@ -99,7 +97,6 @@ function App() {
         name={`edit-avatar`}
         isOpen={isEditAvatarPopupOpen}
         onClose={closeAllPopups}
-        buttonText={`Сохранить`}
       >
         <>
           <fieldset className="form__fields">

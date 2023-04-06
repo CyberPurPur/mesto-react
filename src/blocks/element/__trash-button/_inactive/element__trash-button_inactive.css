@@ -1,0 +1,11 @@
+.element__trash-button_inactive {
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+    width: 18px;
+    height: 19px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}

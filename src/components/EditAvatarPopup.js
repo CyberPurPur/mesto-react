@@ -13,9 +13,6 @@ export default function EditAvatar({ isOpen, onClose, onUpdateAvatar }) {
       avatar: avatarRef.current.value,
     });
   }
-  function handleChangeAvatar() {
-    return avatarRef.current.value;
-  }
 
   return (
     <PopupWithForm
@@ -35,7 +32,6 @@ export default function EditAvatar({ isOpen, onClose, onUpdateAvatar }) {
             placeholder="Ссылка на аватар"
             required
             ref={avatarRef}
-            onChange={handleChangeAvatar}
           />
           <span className="form__input-error avatar-input-error"></span>
         </fieldset>

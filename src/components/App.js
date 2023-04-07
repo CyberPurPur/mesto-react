@@ -65,7 +65,8 @@ function App() {
       setCards((state) =>
         state.map((item) => (item._id === card._id ? newCard : item))
       );
-    });
+    })
+    .catch((err) => console.log(`Ошибка в установке или снятии лайка. ${err}`));
   }
 
   function handleUpdateUser(newUserProfile) {

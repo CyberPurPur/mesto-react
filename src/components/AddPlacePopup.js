@@ -4,11 +4,11 @@ import PopupWithForm from "./PopupWithForm";
 export default function AddPlacePopup({ isOpen, onClose, onAddCard }) {
   const [placeName, setPlaceName] = useState("");
   const [placeLink, setPlaceLink] = useState("");
-
+  
   useEffect(() => {
     setPlaceName("");
     setPlaceLink("");
-  }, [isOpen]);
+  }, [isOpen])
 
   function handleSubmit(evt) {
     evt.preventDefault();
